@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import UseTab from "./components/useTab";
+import UseEffect from "./components/useEffects";
+import UseTitle from "./components/useTitles";
+import UseClick from "./components/useClicks";
 
 const useInput = (initialValue, validator) => {
   const [value, setValue] = useState(initialValue);
@@ -32,6 +35,9 @@ const App = () => {
 
       <input placeholder="Name" {...name} />
       <UseTab />
+      <UseEffect />
+      <UseTitle />
+      <UseClick />
     </>
   );
 };
