@@ -4,11 +4,11 @@ const useClick = (onClick) => {
   const element = useRef();
   useEffect(() => {
     if (element.current) {
-      element.current.addEventListner("click", onClick);
+      element.current.addEventListener("click", onClick);
     }
     return () => {
       if (element.current) {
-        element.current.removeEventListner("click", onClick);
+        element.current.removeEventListener("click", onClick);
       }
     };
   }, []);
