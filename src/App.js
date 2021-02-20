@@ -3,6 +3,8 @@ import UseTab from "./components/useTab";
 import UseEffect from "./components/useEffects";
 import UseTitle from "./components/useTitles";
 import UseClick from "./components/useClicks";
+import UseConfirm from "./components/useConfirms";
+import UsePreventLeave from "./components/usePreventLeaves";
 
 const useInput = (initialValue, validator) => {
   const [value, setValue] = useState(initialValue);
@@ -38,6 +40,8 @@ const App = () => {
       <UseEffect />
       <UseTitle />
       <UseClick />
+      <UseConfirm />
+      <UsePreventLeave />
     </>
   );
 };
