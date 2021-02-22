@@ -9,8 +9,11 @@ const useBeforeLeave = (onBefore) => {
   if (typeof onBefore !== "function") {
     return;
   }
-  const handle = () => {
-    console.log("leaving");
+  const handle = (event) => {
+    const { clientY } = event;
+    if (clientY <= 0) {
+      onBefore();
+    }
   };
 };
 
