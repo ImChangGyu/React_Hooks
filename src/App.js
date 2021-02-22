@@ -5,6 +5,7 @@ import UseTitle from "./components/useTitles";
 import UseClick from "./components/useClicks";
 import UseConfirm from "./components/useConfirms";
 import UsePreventLeave from "./components/usePreventLeaves";
+import UseBeforeLeave from "./components/useBeforeLeaves";
 
 const useInput = (initialValue, validator) => {
   const [value, setValue] = useState(initialValue);
@@ -42,6 +43,7 @@ const App = () => {
       <UseClick />
       <UseConfirm />
       <UsePreventLeave />
+      <UseBeforeLeave />
     </>
   );
 };
