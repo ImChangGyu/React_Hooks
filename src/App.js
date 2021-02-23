@@ -6,6 +6,8 @@ import UseClick from "./components/useClicks";
 import UseConfirm from "./components/useConfirms";
 import UsePreventLeave from "./components/usePreventLeaves";
 import UseBeforeLeave from "./components/useBeforeLeaves";
+import UseFadeIn from "./components/useFadeIns";
+import UseNetwork from "./components/useNetworks";
 
 const useInput = (initialValue, validator) => {
   const [value, setValue] = useState(initialValue);
@@ -44,6 +46,8 @@ const App = () => {
       <UseConfirm />
       <UsePreventLeave />
       <UseBeforeLeave />
+      <UseFadeIn />
+      <UseNetwork />
     </>
   );
 };
