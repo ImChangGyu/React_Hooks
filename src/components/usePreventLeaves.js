@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React from "react";
 
 const usePreventLeave = () => {
   const listener = (event) => {
