@@ -21,7 +21,7 @@ const useNetwork = (onChange) => {
 };
 
 const useNetworks = () => {
-  const onLine = useNetworks();
+  const onLine = useNetwork();
   return (
     <div>
       <h1>{onLine ? "Online" : "Offline"}</h1>
