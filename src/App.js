@@ -8,6 +8,7 @@ import UsePreventLeave from "./components/usePreventLeaves";
 import UseBeforeLeave from "./components/useBeforeLeaves";
 import UseFadeIn from "./components/useFadeIns";
 import UseNetwork from "./components/useNetworks";
+import UseScroll from "./components/useScrolls";
 
 const useInput = (initialValue, validator) => {
   const [value, setValue] = useState(initialValue);
@@ -48,6 +49,7 @@ const App = () => {
       <UseBeforeLeave />
       <UseFadeIn />
       <UseNetwork />
+      <UseScroll />
     </>
   );
 };
