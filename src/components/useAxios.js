@@ -35,15 +35,17 @@ const useAxios = (opts, axiosInstance = defaultAxios) => {
 };
 
 const App = () => {
-  const { loading, data, error } = useAxios({
-    url: "https://yts.am/api/v2/list_movies.json",
+  const { loading, data, error, refetch } = useAxios({
+    url: "yts.am/api/v2/list_movies.json",
   });
   console.log(
     `Loading: ${loading}\nerror: ${error}\ndata: ${JSON.stringify(data)}`
   );
   return (
     <div>
-      <h1>hello</h1>
+      <h1>{data && data.status}</h1>
+      <h2>{loading && "Loading"}</h2>
+      <button onClick={refetch}>refetch</button>
     </div>
   );
 };
