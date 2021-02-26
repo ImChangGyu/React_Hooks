@@ -9,6 +9,9 @@ import UseBeforeLeave from "./components/useBeforeLeaves";
 import UseFadeIn from "./components/useFadeIns";
 import UseNetwork from "./components/useNetworks";
 import UseScroll from "./components/useScrolls";
+import UseFullscreen from "./components/useFullscreens";
+import UseNotification from "./components/useNotifications";
+import UseAxios from "./components/useAxios";
 
 const useInput = (initialValue, validator) => {
   const [value, setValue] = useState(initialValue);
@@ -50,6 +53,9 @@ const App = () => {
       <UseFadeIn />
       <UseNetwork />
       <UseScroll />
+      <UseFullscreen />
+      <UseNotification />
+      <UseAxios />
     </>
   );
 };
