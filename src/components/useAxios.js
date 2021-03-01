@@ -45,7 +45,7 @@ const App = () => {
     <div>
       <h1>{data && data.status}</h1>
       <h2>{loading && "Loading"}</h2>
-      <button onClick={refetch}>refetch Start</button>
+      <button onClick={refetch}>refetch</button>
     </div>
   );
 };
